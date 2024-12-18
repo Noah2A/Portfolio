@@ -1,0 +1,263 @@
+/* styles.css */
+:root {
+    --primary-color: #444851;
+    --secondary-color: #444851;
+    --background-color: #f0f4f8;
+    --text-color: #333;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 3rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h3 {
+    margin: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .card a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: white;
+    background: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .card a:hover {
+    background: var(--secondary-color);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  form {
+    background: white;
+    padding: 2rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+  }
+  
+  form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: var(--secondary-color);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+  }
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.social-links a {
+    color: white;
+    background: var(--primary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10rem; /* Increased margin for more spacing */
+    transition: background 0.3s;
+    margin-bottom: 8rem;
+}
+
+.social-links a:hover {
+    background: var(--secondary-color);
+}
+
+.social-links a i {
+    font-size: 1.2rem;
+}
+
+/* Style pour supprimer les marges et remplissages par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.container {
+  background: url('https://diveng.rosselcdn.net/sites/default/files/dpistyles_v2/diverto_16_9_749w/2024/11/07/node_16106/37046/public/2024/11/07/ac3f2e38a9bef43134d6aae267bcefe8.jpg?itok=vsIQBeeT1733747557') no-repeat center center/cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cadre descriptif */
+.description {
+  background-color: rgba(255, 255, 255, 0.8); /* Couleur blanche avec opacité */
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour donner un effet de profondeur */
+}
+
+.description h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.description p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.home-button {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color);
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.home-button:hover {
+  background: var(--secondary-color);
+}
+
+@font-face {
+  font-family: 'Marker Felt';
+  src: url('https://example.com/path-to-marker-felt.woff2') format('woff2');
+}
+
+.felt-text {
+  font-family: 'Marker Felt', cursive;
+}
+
+header h1,
+.projects-grid h3 {
+  font-family: 'Marker Felt', cursive;
+}
+
+.home-button {
+  font-family: 'Marker Felt', cursive;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Marker Felt', cursive;
+}
+
